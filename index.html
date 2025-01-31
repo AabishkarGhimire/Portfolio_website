@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline';">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Me</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Navbar Header -->
+        <div class="navbar-header">
+          <!-- Updated Hamburger Menu Button -->
+          <button type="button" id="toggle" class="navbar-toggle" aria-label="Toggle navigation" role="button">
+            <span></span>
+          </button>
+        </div>
+    
+        <!-- Navbar Links -->
+        <div class="navbar-menu" id="menu">
+          <ul class="nav navbar-nav">
+            <li><a id="len1" class="hoverable" href="#home" data-text="Home">Home</a></li>
+            <li><a id="len2" class="hoverable" href="#about" data-text="About">About</a></li>
+            <li><a id="len5" class="hoverable" href="#Interests" data-text="Interests">Interests</a></li>
+            <li><a id="len3" class="hoverable" href="#portfolio" data-text="Portfolio">Portfolio</a></li>
+            <li><a id="len4" class="hoverable" href="#contact" data-text="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="relative flex items-center justify-center min-h-screen text-center px-4">
+      <!-- Background Animation -->
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-indigo-900 to-black opacity-80 animate-gradient"></div>
+  
+      <!-- Main Content -->
+      <div class="relative z-10 p-6">
+        <!-- Circular Profile Image -->
+        <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg">
+          <img src="images/me.jpg" alt="Aabishkar" class="w-full h-full object-cover">
+        </div>
+  
+        <h1 class="text-4xl sm:text-5xl font-bold mt-4 text-white">Hey, I'm <span class="text-indigo-400">Aabishkar</span></h1>
+        <p class="mt-3 text-lg sm:text-xl text-gray-300">
+          Passionate <span class="text-purple-400">Software Developer</span> crafting digital experiences.
+        </p>
+  
+        <!-- Call-to-Action Buttons -->
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a href="#contact" class="px-6 py-3 text-lg font-semibold bg-indigo-600 hover:bg-indigo-700 rounded-lg transition">
+            Hire Me
+          </a>
+          <a href="files/resume.pdf" class="px-6 py-3 text-lg font-semibold bg-gray-800 hover:bg-gray-700 rounded-lg transition">
+            Download Resume
+          </a>
+        </div>
+  
+        <!-- Social Media Links with Icons -->
+        <div class="mt-6 flex justify-center space-x-6 text-2xl">
+          <a href="https://github.com/AabishkarGhimire" target="_blank">
+            <img src="images/Github.png" alt="GitHub" class="w-12 h-12 hover:opacity-75 transition">
+          </a>
+          <a href="https://www.linkedin.com/in/aabishkar-ghimire-aa6556343/" target="_blank">
+            <img src="images/LinkedIN.png" alt="LinkedIn" class="w-12 h-12 hover:opacity-75 transition">
+          </a>
+          <a href="https://www.facebook.com/abishkar.ghimire.77" target="_blank">
+            <img src="images/Facebook_white.png" alt="Twitter" class="w-12 h-12 hover:opacity-75 transition">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-page">
+      <div class="about-container">
+        <h1>About Me</h1>
+        <p>
+          🚀 Hello! I'm <strong>Aabishkar</strong>, a passionate final-year Computer Engineering student with a deep interest in 
+          <strong>Software Development, Artificial Intelligence, and System Design</strong>. I enjoy transforming ideas into reality 
+          through code and building scalable, creative, and efficient solutions.
+        </p>
+    
+        <p>
+          💡 With hands-on experience in **multiple technologies**, a **strong foundation in algorithms**, and a **problem-solving mindset**, 
+          I focus on creating impactful digital experiences. My expertise includes <strong>full-stack development, AI-driven applications, 
+          database management, cloud computing, and system architecture</strong>.
+        </p>
+    
+        <p>
+          🔍 I thrive on challenges and innovation, constantly exploring new trends and emerging technologies. Whether it's optimizing 
+          systems, developing robust applications, or diving into AI advancements, I'm always eager to push the boundaries of what's possible.
+        </p>
+    
+        <p>
+          📖 When I'm not coding, you'll find me exploring new tech trends, working on open-source projects, or brainstorming creative solutions 
+          for real-world problems.
+        </p>
+      </div>
+    </section>
+    
+    <section id="Interests">
+              <p class="scroll-info">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
+              <path d="M50,67.1c-0.6,0-1.2-0.2-1.8-0.7c-3.8-3.8-7.7-7.7-11.5-11.5c-2.3-2.3,1.2-5.8,3.5-3.5c2.5,2.5,4.9,4.9,7.4,7.4 c0-13.7,0-27.4,0-41.2c0-0.6,0.2-1.2,0.5-1.5c0,0,0,0,0,0c0.4-0.6,1.1-1,2-0.9c13.7,0.3,26.4,7.2,33.5,19.1 C96.5,55.9,84.7,85,60.2,91.6C35.5,98.2,11.6,79.1,11.1,54c-0.1-3.2,4.9-3.2,5,0c0.3,13.8,8.4,26.4,21.3,31.5 c12.5,5,27.1,1.9,36.6-7.5c9.5-9.5,12.5-24.1,7.5-36.6c-4.8-12.1-16.3-20.1-29-21.2c0,12.8,0,25.5,0,38.3 c2.5-2.5,4.9-4.9,7.4-7.4c2.3-2.3,5.8,1.3,3.5,3.5c-3.9,3.9-7.8,7.8-11.8,11.8C51.2,66.9,50.6,67.1,50,67.1z"/>
+            </svg>
+          </span>
+          Try scrolling down
+        </p>
+      <div class="external">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/coffee.jpg" alt="">
+            </a>
+          </div>
+          
+
+          <div class="img-wrapper faster">
+            <a href="https://en.wikipedia.org/wiki/Chess" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/chess.jpg" alt="">
+            </a>
+          </div>
+      
+          <div class="img-wrapper slower vertical">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/friends.jpg" alt="">
+            </a>
+          </div>
+          
+      
+          <div class="img-wrapper slower slower-down">
+            <a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/stars.jpg" alt="">
+            </a>
+          </div>
+      
+          <div class="img-wrapper">
+            <a href="https://github.com/nvim-lua/kickstart.nvim" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/coding.png" alt="">
+            </a>
+          </div>
+      
+          <div class="img-wrapper slower">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/friends1.jpg" alt="">
+            </a>
+          </div>
+      
+          <div class="img-wrapper faster1">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/garden.jpg" alt="">
+            </a>
+          </div>
+          
+          <div class="img-wrapper slower slower2">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/movies.jpg" alt="">
+            </a>
+          </div>
+          
+          <div class="img-wrapper">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/family.jpg" alt="">
+            </a>
+          </div>
+          
+          <div class="img-wrapper slower">
+            <a href="https://en.wikipedia.org/wiki/Extreme_sport" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/Adventure-Sports.jpg.webp" alt="">
+            </a>
+          </div>
+          
+          <div class="img-wrapper slower last">
+            <a href="https://en.wikipedia.org/wiki/Festival" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/festival.jpg" alt="">
+            </a>
+          </div>
+        </div>      
+          <div class="img-wrapper slower last">
+            <a href="https://en.wikipedia.org/wiki/PC_game" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="images/games.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="relative py-20 bg-gray-900 text-white">
+      <div class="section-content max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">My Portfolio</h2>
+          <!-- Featured Project Section -->
+          <div class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-8">Featured Project</h3>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+              <h3 class="text-3xl font-semibold mb-4">Todo Comments for Neovim</h3>
+              <p class="text-lg text-gray-300 mb-6">
+                <strong style="color:#dc2f55">!!!These are for examples only the placeholders!!!</strong>
+                A Neovim plugin to highlight TODO comments in your codebase and make your project tasks more visible.
+                It's an excellent tool for developers who want to track tasks directly in their code.
+              </p>
+              
+              <!-- GitHub Link -->
+              <a 
+                href="https://github.com/folke/todo-comments.nvim" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-block px-6 py-3 text-lg font-semibold bg-blue-500 hover:bg-blue-600 rounded-lg"
+              >
+                View on GitHub
+              </a>
+      
+              <!-- Repository Overview -->
+              <div class="mt-8">
+                <h4 class="text-2xl font-semibold mb-4">Repository Overview</h4>
+                <div class="w-full h-[400px] bg-gray-900 rounded-lg overflow-hidden">
+                  <iframe 
+                    src="https://github.com/folke/todo-comments.nvim" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-3xl font-bold text-center mb-8">Other Projects</h3>
+
+        <!-- Project Grid -->
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Windows Project Card -->
+          <div class="card transform transition-all hover:-translate-y-2">
+            <div class="face face1 bg-gray-800 rounded-t-lg p-6">
+              <div class="content text-center">
+                <i class="fab fa-windows text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Windows Application</h3>
+              </div>
+            </div>
+            <div class="face face2 bg-gray-700 rounded-b-lg p-6">
+              <div class="content">
+                <p class="text-gray-300 mb-4">
+                  Developed a robust Windows desktop application using .NET framework. 
+                  Features include real-time data processing, custom UI components, and 
+                  seamless system integration.<strong style="color:#dc2f55">!!!These are for examples only the placeholders!!!</strong>
+                </p>
+                <a href="#" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Android Project Card -->
+          <div class="card transform transition-all hover:-translate-y-2">
+            <div class="face face1 bg-gray-800 rounded-t-lg p-6">
+              <div class="content text-center">
+                <i class="fab fa-android text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Android Development</h3>
+              </div>
+            </div>
+            <div class="face face2 bg-gray-700 rounded-b-lg p-6">
+              <div class="content">
+                <p class="text-gray-300 mb-4">
+                  Created innovative Android applications using Kotlin and Java. 
+                  Implemented modern Android architecture components and Material Design 
+                  principles for optimal user experience.<strong style="color:#dc2f55">!!!These are for examples only the placeholders!!!</strong>
+                </p>
+                <a href="#" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Apple Project Card -->
+          <div class="card transform transition-all hover:-translate-y-2">
+            <div class="face face1 bg-gray-800 rounded-t-lg p-6">
+              <div class="content text-center">
+                <i class="fab fa-apple text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">iOS Development</h3>
+              </div>
+            </div>
+            <div class="face face2 bg-gray-700 rounded-b-lg p-6">
+              <div class="content">
+                <p class="text-gray-300 mb-4">
+                  Built elegant iOS applications using Swift and SwiftUI. 
+                  Focused on creating intuitive user interfaces while maintaining 
+                  Apple's high standards for design and functionality.<strong style="color:#dc2f55">!!!These are for examples only the placeholders!!!</strong>
+                </p>
+                <a href="#" class="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-timer">
+      <div class="timer-wrapper">
+        <svg class="timer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none"></rect>
+          <circle cx="128" cy="128" r="88" fill="var(--color-theme)"></circle>
+          <circle cx="128" cy="128" r="88" fill="none" stroke="currentcolor" stroke-miterlimit="10" stroke-width="16"></circle>
+          <line class="timer-hand" x1="128" y1="128" x2="167.6" y2="88.4" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+          <line class="timer-switch" x1="104" y1="8" x2="152" y2="8" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+        </svg>
+      </div>
+      <div class="caption"></div>
+    </div>
+
+    <section id="contact">
+      <form id="contact-form" class="form">
+        <div class="title">Contact Me</div>
+        <div class="subtitle">We'd love to hear from you!</div>
+
+        <div class="input-container ic1">
+          <input id="name" name="user_name" class="input" type="text" placeholder=" " required aria-label="Your Name" />
+          <div class="cut cut-short"></div>
+          <label for="name" class="placeholder">Name</label>
+        </div>
+
+        <div class="input-container ic2">
+          <input id="email" name="user_email" class="input" type="email" placeholder=" " required aria-label="Your Email" />
+          <div class="cut cut-short"></div>
+          <label for="i email" class="placeholder">Email</label>
+        </div>
+
+        <div class="input-container ic2">
+          <textarea id="message" name="message" class="input" placeholder=" " style="height: 150px;" required aria-label="Your Message"></textarea>
+          <div class="cut"></div>
+          <label for="message" class="placeholder">Message</label>
+        </div>
+
+        <div class="ic1">
+          <button type="submit" class="button-89">Send</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <script type="text/javascript">
+    // Initialize EmailJS
+(function() {
+  emailjs.init("4BFcp2sPmBRkWWnVv");
+})();
+
+document.addEventListener("DOMContentLoaded", function() {
+  const aboutPage = document.querySelector('.about-page main');
+  const scrollContainer = aboutPage?.querySelector('.scrollbar');
+  const paragraphs = aboutPage?.querySelectorAll('p');
+
+  if (aboutPage) {
+    aboutPage.addEventListener('scroll', handleScroll);
+  }
+
+  // Navbar Scroll Handling
+  window.addEventListener('scroll', updateActiveNavLink);
+  
+  // Add event listener for navbar toggle
+  document.querySelector('.navbar-toggle').addEventListener('click', toggleNav);
+});
+
+
+// Handle scroll and update CSS properties dynamically
+function handleScroll() {
+  const aboutPage = document.querySelector('.about-page main');
+  const scrollPercentage = (aboutPage.scrollTop / (aboutPage.scrollHeight - aboutPage.clientHeight)) * 100;
+  
+  document.documentElement.style.setProperty('--scroll-y-position', `${scrollPercentage}%`);
+  document.documentElement.style.setProperty('--reflection-y-position', `${scrollPercentage}%`);
+  
+  const opacity1 = 1 - (scrollPercentage / 100);
+  const opacity2 = (scrollPercentage / 100);
+  document.documentElement.style.setProperty('--opacity-1', opacity1);
+  document.documentElement.style.setProperty('--opacity-2', opacity2);
+  document.documentElement.style.setProperty('--text-offset-1', 10 - (scrollPercentage * 0.1));
+  document.documentElement.style.setProperty('--text-offset-2', 10 + (scrollPercentage * 0.1));
+}
+
+// Add this to your existing JavaScript
+document.addEventListener("DOMContentLoaded", function() {
+  // Get toggle button
+  const theToggle = document.querySelector('.navbar-toggle');
+  
+  // Utility functions for class manipulation
+  function hasClass(elem, className) {
+    return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+  }
+
+  function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+      elem.className += ' ' + className;
+    }
+  }
+
+  function removeClass(elem, className) {
+    var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+    if (hasClass(elem, className)) {
+      while (newClass.indexOf(' ' + className + ' ') >= 0) {
+        newClass = newClass.replace(' ' + className + ' ', ' ');
+      }
+      elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+  }
+
+  function toggleClass(elem, className) {
+    var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+    if (hasClass(elem, className)) {
+      while (newClass.indexOf(" " + className + " ") >= 0) {
+        newClass = newClass.replace(" " + className + " ", " ");
+      }
+      elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+      elem.className += ' ' + className;
+    }
+  }
+
+  // Update the toggleNav function to use the new toggle functionality
+  function toggleNav() {
+    const navMenu = document.querySelector('.navbar-menu');
+    toggleClass(theToggle, 'on');
+    toggleClass(navMenu, 'active');
+    document.body.classList.toggle('menu-open');
+  }
+
+  // Add click event listener to toggle button
+  if (theToggle) {
+    theToggle.onclick = function(e) {
+      e.preventDefault();
+      toggleNav();
+      return false;
+    };
+  }
+});
+
+
+// Update active navbar link based on scroll position
+function updateActiveNavLink() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".hoverable");
+  const currentScroll = window.scrollY;
+  
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100; // Offset for navbar height
+    const sectionHeight = section.clientHeight;
+
+    if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+      const id = section.getAttribute("id");
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}
+
+// Handle navbar link clicks (smooth scroll)
+document.querySelectorAll('.hoverable').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default jump
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      // Remove active from all and set it for clicked one
+      document.querySelectorAll('.hoverable').forEach(nav => nav.classList.remove('active'));
+      this.classList.add('active');
+
+      // Smooth scroll to target section
+      window.scrollTo({
+        top: targetSection.offsetTop - 80, // Adjust for navbar height
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+// Handle form submission with EmailJS
+window.onload = function() {
+  const contactForm = document.getElementById('contact-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const button = this.querySelector('button');
+      const originalText = button.textContent;
+      button.textContent = 'Sending...';
+      button.disabled = true;
+
+      const formData = new FormData(this);
+      const name = formData.get("user_name");
+      const email = formData.get("user_email");
+      const message = formData.get("message");
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        button.textContent = originalText;
+        button.disabled = false;
+        return;
+      }
+
+      emailjs.sendForm('service_exyet3e', 'template_wu36olp', this)
+        .then((response) => {
+          console.log('Success:', response);
+          alert('Message sent successfully!');
+          this.reset();
+        })
+        .catch((error) => {
+          console.error('Failed to send message:', error);
+          alert('Failed to send message. Please try again later.');
+        })
+        .finally(() => {
+          button.textContent = originalText;
+          button.disabled = false;
+        });
+    });
+  }
+};
+  </script>
+</body>
+</html>
