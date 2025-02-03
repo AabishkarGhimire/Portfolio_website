@@ -942,18 +942,20 @@ a{
 .container {
   width: 100%;
   max-width: 1400px;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px; /* Consistent gap between cards */
+  align-items: stretch; /* Ensures equal height */
+  row-gap: 30px; /* Ensures vertical gap between cards */
+  column-gap: 30px; /* Ensures horizontal gap between cards */
   padding: 20px;
   margin: 0 auto;
 }
 
+
 .container .card {
-  position: relative;
-  flex: 0 1 calc(33.333% - 60px); /* Equal width distribution accounting for gap */
+  box-sizing: border-box;
+  flex: 0 1 calc(33.333% - 30px);
   min-width: 300px;
   margin: 0;
 }
@@ -961,8 +963,10 @@ a{
 .container .card .face {
   width: 100%;
   height: 400px;
-  transition: 0.4s;
+  padding: 0; /* Ensure no extra padding */
+  margin: 0; /* Ensure no extra margins */
 }
+
 
 .container .card .face.face1 {
   position: relative;
