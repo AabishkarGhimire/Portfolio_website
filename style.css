@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -191,7 +191,7 @@ nav {
     flex: 0 1 auto; /* flex-grow: 0, flex-shrink: 1, flex-basis: auto */
     margin-left: 2em;
     margin-right: 1em;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     white-space: nowrap;
   }
 }
@@ -306,7 +306,7 @@ nav {
   .navbar-nav a {
     display: block; /* Full width clickable area */
     padding: 0.9375rem 1.25rem; /* Larger tap target */
-    font-size: 1.8em; /* Slightly smaller font for better fit */
+    font-size: 1.5em; /* Slightly smaller font for better fit */
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     text-decoration: none;
@@ -1023,7 +1023,7 @@ a{
 }
 
 .container .card .face.face1 .content h3 {
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   text-align: center;
   margin-top: 0.625rem;
