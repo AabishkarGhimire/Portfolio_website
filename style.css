@@ -959,21 +959,17 @@ a{
 /*------------------------------------------------------------------------------------------*/
 /* Portfolio Cards*/
 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.875rem;
   width: 100%;
   max-width: 87.5rem;
-  display: flex;
-  justify-content:flex-start;
-  flex-wrap: wrap;
-  align-items: stretch; /* Ensures equal height */
-  gap: 1.875rem; 
   padding: 1.25rem;
   margin: 0 auto;
 }
 
-
 .container .card {
   box-sizing: border-box;
-  flex: 0 1 calc((100% - 3.75rem) / 3);
   min-width: 15rem;
 }
 
