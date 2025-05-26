@@ -975,7 +975,7 @@ a{
 .container .card {
   box-sizing: border-box;
   flex: 0 1 calc(33.333% - 1.875rem);
-  min-width: 18.75rem;
+  min-width: 15rem;
   margin: 0;
 }
 
