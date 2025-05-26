@@ -965,8 +965,7 @@ a{
   justify-content:flex-start;
   flex-wrap: wrap;
   align-items: stretch; /* Ensures equal height */
-  row-gap: 1.875rem; /* Ensures vertical gap between cards */
-  column-gap: 1.875rem; /* Ensures horizontal gap between cards */
+  gap: 1.875rem; 
   padding: 1.25rem;
   margin: 0 auto;
 }
@@ -974,9 +973,8 @@ a{
 
 .container .card {
   box-sizing: border-box;
-  flex: 0 1 calc(33.333% - 1.875rem);
+  flex: 0 1 calc((100% - 3.75rem) / 3);
   min-width: 15rem;
-  margin: 0;
 }
 
 .container .card .face {
@@ -1082,7 +1080,7 @@ a{
 /* Responsive Design */
 @media (max-width: 1200px) {
   .container .card {
-    flex: 0 1 calc(50% - 2.8125rem); /* Two cards per row */
+    flex: 0 1 calc((100% - 1.875rem) / 2); /* Two cards per row */
   }
 }
 
