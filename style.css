@@ -963,7 +963,7 @@ a{
   width: 100%;
   max-width: 87.5rem;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   flex-wrap: wrap;
   align-items: stretch; /* Ensures equal height */
   row-gap: 1.875rem; /* Ensures vertical gap between cards */
