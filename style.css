@@ -942,16 +942,9 @@ a{
 .container {
   width: 100%;
   max-width: 1400px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch; /* Ensures equal height */
-  row-gap: 30px; /* Ensures vertical gap between cards */
-  column-gap: 30px; /* Ensures horizontal gap between cards */
   padding: 20px;
   margin: 0 auto;
 }
-
 
 .container .card {
   box-sizing: border-box;
