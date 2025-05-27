@@ -961,10 +961,10 @@ a{
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.875rem;
+  gap: 2rem;
   width: 100%;
-  max-width: 87.5rem;
-  padding: 1.25rem;
+  max-width: 100rem;
+  padding: 2rem;
   margin: 0 auto;
 }
 
@@ -1073,37 +1073,15 @@ a{
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
-  .container .card {
-    flex: 0 1 calc((100% - 1.875rem) / 2); /* Two cards per row */
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
 }
 
 @media (max-width: 768px) {
   .container {
     gap: 1.25rem;
-  }
-  
-  .container .card {
-    flex: 0 1 100%; /* One card per row */
-  }
-  
-  .container .card .face {
-    height: 18.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container .card .face {
-    height: 15.625rem;
-  }
-  
-  .container .card .face.face1 .content i {
-    font-size: 2.5em;
-  }
-  
-  .container .card .face.face2 .content p {
-    font-size: 0.5625rem;
+    grid-template-columns: 1fr; /* 1 card per row */
   }
 }
